@@ -1,0 +1,103 @@
+.token-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .token-form, .token-list {
+    margin-bottom: 20px;
+  }
+  
+  .current-serving {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .service-status {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .service-name {
+    font-weight: 500;
+    margin-right: 10px;
+    min-width: 150px;
+  }
+  
+  .token-number {
+    margin-right: 15px;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .none {
+    color: #999;
+    font-style: italic;
+    margin-right: 15px;
+  }
+  
+  .token-details {
+    padding: 10px 0;
+  }
+  
+  .customer-name {
+    color: #666;
+    margin-left: 5px;
+  }
+  
+  .status {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+  }
+  
+  .service-type {
+    color: #666;
+    margin-left: 10px;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Status colors */
+  .waiting {
+    color: #ff9800;
+    background-color: #fff3e0;
+  }
+  
+  .serving {
+    color: #2196f3;
+    background-color: #e3f2fd;
+  }
+  
+  .completed {
+    color: #4caf50;
+    background-color: #e8f5e9;
+  }
+  
+  .cancelled {
+    color: #f44336;
+    background-color: #ffebee;
+  }
+  
+  mat-expansion-panel.waiting {
+    border-left: 4px solid #ff9800;
+  }
+  
+  mat-expansion-panel.serving {
+    border-left: 4px solid #2196f3;
+  }
+  
+  mat-expansion-panel.completed {
+    border-left: 4px solid #4caf50;
+  }
+  
+  mat-expansion-panel.cancelled {
+    border-left: 4px solid #f44336;
+  }

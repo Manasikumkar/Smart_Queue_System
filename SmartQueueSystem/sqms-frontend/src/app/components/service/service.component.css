@@ -1,0 +1,38 @@
+.service-container {
+    padding: 20px;
+  }
+  
+  .form-card, .list-card {
+    margin-bottom: 20px;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .service-item {
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .org-name {
+    color: #666;
+    font-size: 0.8em;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .success-snackbar {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .error-snackbar {
+    background-color: #f44336;
+    color: white;
+  }

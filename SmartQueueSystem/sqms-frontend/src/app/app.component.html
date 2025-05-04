@@ -1,0 +1,36 @@
+<div class="container-fluid min-vh-100 d-flex flex-column p-0">
+  <!-- Header -->
+  <header class="bg-primary text-white py-3 shadow-sm">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <h1 class="h3 mb-2 mb-md-0">{{ title }}</h1>
+      <nav class="nav">
+        <a class="nav-link text-white" routerLink="/dashboard" routerLinkActive="fw-bold text-warning">Dashboard</a>
+        <a class="nav-link text-white" routerLink="/token" routerLinkActive="fw-bold text-warning">Token</a>
+        <a class="nav-link text-white" routerLink="/counter" routerLinkActive="fw-bold text-warning">Counter</a>
+        <a class="nav-link text-white" routerLink="/service" routerLinkActive="fw-bold text-warning">Service</a>
+        <a class="nav-link text-white" routerLink="/organization" routerLinkActive="fw-bold text-warning">Organization</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow-1" style="background: #f0f2f5; padding: 2rem 0;">
+    <div class="container">
+      <h2 class="mb-4 text-primary text-center">{{ pageTitle }}</h2> <!-- Dynamic Page Title -->
+      
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <router-outlet></router-outlet> <!-- 👈 Angular Component will load here -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Smart Queue Management System</p>
+      <small>Designed with ❤️ using Bootstrap</small>
+    </div>
+  </footer>
+</div>

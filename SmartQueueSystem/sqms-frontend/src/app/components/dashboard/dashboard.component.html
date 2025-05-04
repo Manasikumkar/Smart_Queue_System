@@ -1,0 +1,32 @@
+<div class="container mt-4">
+  <div *ngIf="isLoading" class="text-center">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+    <button (click)="loadDashboardStats()" class="btn btn-sm btn-outline-danger ms-3">
+      Retry
+    </button>
+  </div>
+
+  <div *ngIf="stats && !isLoading" class="row">
+    <!-- Example stats cards using Bootstrap -->
+    <div class="col-md-4 mb-4" *ngIf="stats.totalUsers !== undefined">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Total Users</h5>
+          <p class="display-4">{{ stats.totalUsers }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 mt-3">
+      <button (click)="refreshData()" class="btn btn-primary">
+        <i class="bi bi-arrow-clockwise"></i> Refresh
+      </button>
+    </div>
+  </div>
+</div>
